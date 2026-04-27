@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Urban Cafe | Your Favorite Cafe</title>
+    <meta name="description" content="Savor the finest Krispy Fried Chicken and authentic snacks at The Urban Cafe. A cozy spot for friends, food, and fun.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/latte.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">THE URBAN <span>CAFE</span></a>
+            
+            <ul class="nav-links">
+                <li><li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1 class="reveal">Your <span>Favorite</span> Cafe</h1>
+                <p class="reveal">Indulge in our signature Krispy Fried Chicken and authentic South Indian snacks. Whether it's a match of carrom or an arm-wrestling challenge, we've got the vibe you need.</p>
+                <div class="hero-btns reveal">
+                    <a href="#menu" class="btn-cta">Explore Menu</a>
+                    <a href="#contact" class="btn-secondary">Visit Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Products -->
+        <section id="popular" class="products">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Urban Favorites</h2>
+                    <p>The snacks that keep our customers coming back for more.</p>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card reveal">
+                        <div class="product-img">
+                            <img src="assets/chicken.png" alt="Krispy Fried Chicken">
+                        </div>
+                        <div class="product-info">
+                            <h3>Krispy Fried Chicken</h3>
+                            <p>Our secret recipe golden-fried chicken. Crunchy on the outside, juicy on the inside.</p>
+                            <div class="product-footer">
+                                <span class="price">AED 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card reveal">
+                        <div class="product-img">
+                            <img src="assets/burger.png" alt="Urban Special Burger">
+                        </div>
+                        <div class="product-info">
+                            <h3>Urban Special Burger</h3>
+                            <p>Freshly grilled patty with our signature sauce and melted cheese.</p>
+                            <div class="product-footer">
+                                <span class="price">AED 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card reveal">
+                        <div class="product-img">
+                            <img src="assets/dosa.png" alt="Masala Dosa">
+                        </div>
+                        <div class="product-info">
+                            <h3>Masala Dosa</h3>
+                            <p>Traditional South Indian crepe served with flavorful sambar and coconut chutney.</p>
+                            <div class="product-footer">
+                                <span class="price">AED 10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about" class="about">
+            <div class="container about-img reveal">
+                <img src="assets/interior.png" alt="The Urban Cafe Vibe">
+            </div>
+            <div class="container about-content reveal">
+                <h2>The Ultimate Hub for Food & Fun</h2>
+                <p>Located in the heart of the city, The Urban Cafe is more than just a restaurant. It's a community space designed for people who love great food and better company.</p>
+                <p>From our checkered floors to our carrom and arm-wrestling setups, every corner is built for memories. We take pride in serving high-quality, affordable food that hits the spot every time.</p>
+                
+                <div class="values">
+                    <div class="value-item"><i class="fas fa-gamepad"></i> Carrom & Games</div>
+                    <div class="value-item"><i class="fas fa-fist-raised"></i> Arm Wrestling</div>
+                    <div class="value-item"><i class="fas fa-utensils"></i> Krispy Delights</div>
+                    <div class="value-item"><i class="fas fa-users"></i> Youth Hub</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Our Menu</h2>
+                    <p>Quality ingredients, authentic flavors, affordable prices.</p>
+                </div>
+
+                <div class="menu-tabs reveal">
+                    <button class="tab-btn active" data-target="all">All Items</button>
+                    <button class="tab-btn" data-target="fried-chicken">Fried Chicken</button>
+                    <button class="tab-btn" data-target="south-indian">South Indian</button>
+                    <button class="tab-btn" data-target="fast-food">Fast Food</button>
+                </div>
+
+                <div class="menu-list reveal">
+                    <!-- Fried Chicken -->
+                    <div class="menu-item" data-category="fried-chicken">
+                        <div class="menu-item-info">
+                            <h4>Chicken Wings (4pcs)</h4>
+                            <p>Spicy and crunchy</p>
+                        </div>
+                        <span class="price">AED 15</span>
+                    </div>
+                    <div class="menu-item" data-category="fried-chicken">
+                        <div class="menu-item-info">
+                            <h4>Chicken Pops (Large)</h4>
+                            <p>Bite-sized delights</p>
+                        </div>
+                        <span class="price">AED 12</span>
+                    </div>
+                    <div class="menu-item" data-category="fried-chicken">
+                        <div class="menu-item-info">
+                            <h4>Chicken Drumstick (2pcs)</h4>
+                            <p>Juicy and perfectly breaded</p>
+                        </div>
+                        <span class="price">AED 18</span>
+                    </div>
+
+                    <!-- Fast Food -->
+                    <div class="menu-item" data-category="fast-food">
+                        <div class="menu-item-info">
+                            <h4>Urban Veg Burger</h4>
+                            <p>Crispy veg patty with special mayo</p>
+                        </div>
+                        <span class="price">AED 10</span>
+                    </div>
+                    <div class="menu-item" data-category="fast-food">
+                        <div class="menu-item-info">
+                            <h4>Chicken Burger</h4>
+                            <p>Juicy chicken breast patty</p>
+                        </div>
+                        <span class="price">AED 12</span>
+                    </div>
+                    <div class="menu-item" data-category="fast-food">
+                        <div class="menu-item-info">
+                            <h4>Cheese Sandwich</h4>
+                            <p>Toasted with premium melted cheese</p>
+                        </div>
+                        <span class="price">AED 10</span>
+                    </div>
+
+                    <!-- South Indian -->
+                    <div class="menu-item" data-category="south-indian">
+                        <div class="menu-item-info">
+                            <h4>Plain Dosa</h4>
+                            <p>Crispy golden crepe</p>
+                        </div>
+                        <span class="price">AED 8</span>
+                    </div>
+                    <div class="menu-item" data-category="south-indian">
+                        <div class="menu-item-info">
+                            <h4>Medu Vada (2pcs)</h4>
+                            <p>Crunchy savory donuts</p>
+                        </div>
+                        <span class="price">AED 10</span>
+                    </div>
+                    <div class="menu-item" data-category="south-indian">
+                        <div class="menu-item-info">
+                            <h4>Filter Coffee</h4>
+                            <p>Authentic South Indian brew</p>
+                        </div>
+                        <span class="price">AED 5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>What People Say</h2>
+                    <p>Real stories from our amazing community.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card reveal">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">A</div>
+                            <div class="reviewer-details">
+                                <h4>Adarsh Gupta</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Very nice place to hangout with friends. Carrom board and Arm wrestling table is also available. Krispy Fried Chicken is best."</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card reveal">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">R</div>
+                            <div class="reviewer-details">
+                                <h4>Rahul Sharma</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The vibe is amazing. Love the red and white theme. Best chicken pops in the city. Highly recommended for students!"</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card reveal">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">P</div>
+                            <div class="reviewer-details">
+                                <h4>Priya Das</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Cozy atmosphere and great food. Perfect for a quick bite or a long talk with friends. The staff is very friendly too."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Gallery</h2>
+                    <p>A glimpse into the life and soul of our cafe.</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal"><img src="assets/interior.png" alt="Cafe Interior"></div>
+                    <div class="gallery-item reveal"><img src="assets/chicken.png" alt="Krispy Fried Chicken"></div>
+                    <div class="gallery-item reveal"><img src="assets/vibe.png" alt="Urban Vibe"></div>
+                    <div class="gallery-item reveal"><img src="assets/burger.png" alt="Fast Food Delights"></div>
+                    <div class="gallery-item reveal"><img src="assets/dosa.png" alt="South Indian Specialties"></div>
+                    <div class="gallery-item reveal"><img src="assets/chai.png" alt="Chai & Snacks"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container contact-info reveal">
+                <h2>Get in Touch</h2>
+                <p>Have a question or just want to say hi? We'd love to hear from you.</p>
+                
+                <div class="contact-item">
+                    <h3><i class="fas fa-location-dot"></i> Visit Us</h3>
+                    <p>Subachani Rd, opposite SHREE DURGA MANDIR, Tinsukia, Assam 786125</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+                    <p>Mon - Sun: 11:00 AM - 10:00 PM</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3><i class="fas fa-phone"></i> Call Us</h3>
+                    <p>+91 93870 64060</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="container contact-form reveal">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-cta" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <h2 class="footer-logo">THE URBAN <span>CAFE</span></h2>
+                <p>Serving happiness and Krispy Fried Chicken since 2020.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get updates on new arrivals and events.</p>
+                <div class="form-group" style="display: flex; gap: 10px; margin-top: 15px;">
+                    <input type="email" placeholder="Your Email" style="padding: 0.5rem;">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 The Urban Cafe. All rights reserved. The best Krispy Fried Chicken in the city.
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
